@@ -2,17 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -23,16 +12,210 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.centr {
+  background: yellow;
 }
+.centrSnooze {
+  background: red;
+}
+#session-counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  border: 7px solid #13353a;
+  margin: 1vh auto auto auto;
+  width: auto;
+  max-width: 180px;
+  height: 160px;
+  border-radius: 50px;
+  position: relative;
+}
+.nums {
+  font-size: auto;
+}
+.setters {
+  display: flex;
+  justify-content: center;
+  margin: 0vh auto 2vh auto ;
+  width: 35%;
+  height: 8vh;
+  border-radius: 50px; 
+  position: relative;
+}
+.setButsLeft {
+  margin: 0 0 0 0;
+  padding: 0 5 0 0;
+  font-size: 15px;
+}
+.setButsLeft:hover {
+  cursor: pointer;
+}
+.setButsRight {
+  margin: 0 0 0 0;
+  padding: 0 0 0 5;
+  font-size: 15px;
+}
+.setButsRight:hover {
+  cursor: pointer;
+}
+.controls {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size: 17px;
+  margin: 1vh auto auto auto;
+  position: relative;
+}
+.setControlLeft {
+  margin: 0 3vw 0 0;
+  padding: 4px 0 0 0 ;
+  font-size: 20px;
+  border: solid;
+  border-radius: 7px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.setControlLeft:hover {
+  cursor: pointer;
+}
+.setControlRight {
+  margin: 0 0 0 3vw;
+  font-size: 20px;
+  border: 10px;
+}
+.playicon{
+  position:absolute;
+  margin-top:13px;
+  margin-left:16px;
+  border-left:35px solid #fff;
+  border-right:18px dashed transparent;
+  border-top:18px dashed transparent;
+  border-bottom:18px dashed transparent;
+}
+.snoozeWrap {
+  display: flex;
+  align-content: center;
+  margin: 0vh auto auto auto;
+  border: 7px solid #13353a;
+  width: 40%; 
+  height: 17vh;
+  border-radius: 50px;
+  position: relative;
+}
+.snooze-mins {
+  display: flex;
+  justify-content: center;
+  font-size: 5vh;
+  margin: 0 auto 0 auto;
+  background: silver;
+  border: 3px solid;
+}
+.sesh-mins{
+  display: flex;
+  justify-content: center;
+  font-size: 5vh;
+  
+  width: 40px;
+  margin: 0 auto 0 auto;
+  background: silver;
+  border: black;
+}
+#break-length {
+  font-size: 3vh;
+  margin: auto 0 auto 0;
+  font: center;
+  width: 36px;
+  border: 3px solid;
+  border-radius: 5px;
+  background: silver;
+}
+.width-box {
+  width: 10px
+}
+#break-label {
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  align-content: center;
+  margin: 3vh 0 0 0;
+}
+#break-decrement {
+  display: flex;
+  font-size: 3vh;
+  align-content: center;
+  margin: auto 2px auto 2vw;
+}
+#break-increment {
+  display: flex;
+  font-size: 3vh;
+  align-content: center;
+  margin: auto 2vw auto 2px;
+}
+#session-label{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 1vh 0 0 0;
+}
+#session-decrement{
+  display: flex;
+  font-size: 3vh;
+  align-content: center;
+  margin: auto 2px auto 2vw;
+}
+#session-increment{
+  display: flex;
+  font-size: 3vh;
+  align-content: center;
+  margin: auto 2vw auto 2px;
+}
+.timer-label-box{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 1vh auto;
+  border: 3px solid #13353a;
+  width: auto; 
+  max-width: 180px;
+  height: 5vh;
+  border-radius: 50px;
+  position: relative;
+}
+#timer-label{
+  justify-self: center;
+  align-self: center;
+  font-size: 3vh;
+  margin: auto;
+  background: none;
+}
+#session-length {
+  font-size: 3vh;
+  margin: auto 0vw auto 0vw;
+  font: center;
+  width: 37px;
+  border: 3px solid;
+  border-radius: 5px;
+  background: silver;
+}
+#time-left {
+  display: flex;
+  justify-content: center;
+  font-size: 7vh;
+  margin: auto auto auto 0vw;
+  width: 20vw;
+}
+#no-border-button{
+  border: none;
+}
+#reset {
+  font-size: 20px;
+  border: solid;
+  border-radius: 7px;
+  padding: 4px 4px 4px 4px;
+}
+#reset:hover {
+  cursor: pointer;
+}
+#start-stop {
+  border: 5px;
 }
